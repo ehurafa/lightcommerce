@@ -11,6 +11,10 @@ function App() {
   const [products, setProducts] = useState([]);
   const [productDetail, setProductDetail] = useState(null);
 
+  const addCart = (product) => {
+    return
+  }
+
   let min = 10;
   let max = 50;
 
@@ -45,7 +49,7 @@ function App() {
     <>
       <div className="container">
         <Header />
-        <ProductList list={ products } />
+        <ProductList list={ products } addCart={ addCart } />
         <Footer />
       </div>
     </>
