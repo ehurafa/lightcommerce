@@ -1,5 +1,7 @@
 import React, { useState, useEffect} from 'react';
 
+import "./Product.css";
+
 const Product = ({ product, addCart }) => {
 
   let min = 10;
