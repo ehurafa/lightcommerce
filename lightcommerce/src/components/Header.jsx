@@ -1,6 +1,6 @@
 import "./Header.css";
 
-const Header = ({ cartItems }) => {
+const Header = ({ cartItems, openCart }) => {
   return (
     <div className="header">
       <h1>Light Commerce</h1>
@@ -12,7 +12,7 @@ const Header = ({ cartItems }) => {
 
       <div className="profile">
         <a href="">Login</a>
-          <button className="cart">{cartItems}</button>
+          <button className="cart" onClick={ () => openCart() }>{cartItems}</button>
       </div>
       
     </div>
