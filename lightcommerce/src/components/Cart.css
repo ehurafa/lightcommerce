@@ -1,0 +1,19 @@
+.cart .shadow {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+}
+
+.cart .inner {
+    width: 200px;
+    height: 100vh;
+    background: #fff;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+}

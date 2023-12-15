@@ -1,15 +1,20 @@
 import "./Header.css";
 
-const Header = () => {
+const Header = ({ cartItems }) => {
   return (
     <div className="header">
-      <h1>LC</h1>
+      <h1>Light Commerce</h1>
       <nav>
         <a href="">page 1</a>
         <a href="">page 2</a>
       </nav>
 
-      <div className="cart">23</div>
+
+      <div className="profile">
+        <a href="">Login</a>
+          <button className="cart">{cartItems}</button>
+      </div>
+      
     </div>
   )
 }

@@ -3,6 +3,7 @@ import { useState, useEffect} from "react";
 import ProductList from "./components/ProductList";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
+import Cart from "./components/Cart";
 
 import axios from "axios";
 
@@ -10,9 +11,13 @@ function App() {
 
   const [products, setProducts] = useState([]);
   const [productDetail, setProductDetail] = useState(null);
+  const [cart, setCart] = useState(0);
 
   const addCart = (product) => {
-    return
+    
+    let cartItems = cart;
+    console.log('ok', cartItems ++)
+    setCart(cartItems ++);
   }
 
   let min = 10;
@@ -45,10 +50,15 @@ function App() {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    
+  }, [addCart]);
+
   return (
     <>
       <div className="container">
-        <Header />
+        <Header cartItems={ cart } />
+        <Cart />
         <ProductList list={ products } addCart={ addCart } />
         <Footer />
       </div>

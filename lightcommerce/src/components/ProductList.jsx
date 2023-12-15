@@ -1,9 +1,12 @@
+import { useEffect } from "react";
+
 import "./ProductList.css";
 
 import Product from "./Product";
 
 const ProductList = ({ list, addCart }) => {
-  console.log('list ', list)
+  
+
   return (
     <div className="product-list">
       { list && list.map((product) => (

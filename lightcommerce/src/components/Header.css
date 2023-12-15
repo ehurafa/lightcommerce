@@ -10,9 +10,11 @@
 }
 
 .header h1 {
-    border: 1px solid #333;
     height: 100%;
     font-size: 1rem;
+    padding: 0 10px;
+    color: #fff;
+    background-color: #000;
 }
 
 .header nav {
@@ -22,6 +24,19 @@
 }
 
 .header nav a {
-    color: #000;
     margin: 0 10px;
+}
+
+.header .profile {
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header .cart {
+    height: 100%;
+    color: #fff;
+    background-color: #555;
+    padding: 0 5px;
+    font-size: 0.6rem;
 }

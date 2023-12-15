@@ -13,7 +13,7 @@ const Product = ({ product, addCart }) => {
         <img src={ product.urls.thumb  } />
         <p>{ product.description }</p>
         <p>{ `R$ ${product.price},00` }</p>
-        <button onClick={ addCart(product) }>Comprar</button>
+        <button onClick={ () => addCart(product) }>Comprar</button>
     </div>
   )
 }
