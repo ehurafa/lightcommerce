@@ -8,14 +8,13 @@ const Header = ({ cartItems, openCart }) => {
   const { currentUser } = useSelector(rootReducer => rootReducer.userReducer);
   const dispatch = useDispatch();
 
-  console.log('currentUser ', currentUser)
 
   const handleLogin = () => {
     dispatch(loginUser({ name: "Rafa" }))
   }
 
   const handleLogout = () => {
-    console.log('handleLogout')
+
     dispatch(logoutUser())
   }
 

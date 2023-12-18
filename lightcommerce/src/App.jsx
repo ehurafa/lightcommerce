@@ -14,13 +14,6 @@ function App() {
   const [cart, setCart] = useState(false);
   const [cartItems, setCartItems] = useState(0);
 
-  const addCart = (product) => {
-    
-    let addCartItems = cartItems;
-    console.log('ok', addCartItems ++)
-    setCartItems(addCartItems ++);
-  }
-
   let min = 10;
   let max = 50;
 
@@ -49,7 +42,6 @@ function App() {
   };
 
   const openCart = () => {
-    console.log('opencart')
     setCart(true)
   }
 
@@ -60,16 +52,13 @@ function App() {
     fetchData();
   }, []);
 
-  useEffect(() => {
-    
-  }, [addCart]);
 
   return (
     <>
       <div className="container">
         <Header cartItems={ cartItems } openCart={ openCart } />
         { cart && <Cart closeCart={ closeCart } />}
-        <ProductList list={ products } addCart={ addCart } />
+        <ProductList list={ products } />
         <Footer />
       </div>
     </>

@@ -4,13 +4,13 @@ import "./ProductList.css";
 
 import Product from "./Product";
 
-const ProductList = ({ list, addCart }) => {
+const ProductList = ({ list }) => {
   
 
   return (
     <div className="product-list">
       { list && list.map((product) => (
-        <Product key={ product.id } product={ product } addCart={ addCart }/>
+        <Product key={ product.id } product={ product } />
       ))}
     </div>
   )
