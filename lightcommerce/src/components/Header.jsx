@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 
 import "./Header.css";
-import UserActionTypes from "../redux/user/action-types";
+import { loginUser, logoutUser } from "../redux/user/actions";
 
 const Header = ({ cartItems, openCart }) => {
 
@@ -11,17 +11,12 @@ const Header = ({ cartItems, openCart }) => {
   console.log('currentUser ', currentUser)
 
   const handleLogin = () => {
-    dispatch({
-      type: UserActionTypes.LOGIN,
-      payload: { name: "Rafa" }
-    })
+    dispatch(loginUser({ name: "Rafa" }))
   }
 
   const handleLogout = () => {
     console.log('handleLogout')
-    dispatch({
-      type: UserActionTypes.LOGOUT
-    })
+    dispatch(logoutUser())
   }
 
   return (
