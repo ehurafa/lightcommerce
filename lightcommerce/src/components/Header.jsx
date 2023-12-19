@@ -3,9 +3,10 @@ import { useSelector, useDispatch } from "react-redux";
 import "./Header.css";
 import { loginUser, logoutUser } from "../redux/user/actions";
 
-const Header = ({ cartItems, openCart }) => {
+const Header = ({ openCart }) => {
 
   const { currentUser } = useSelector(rootReducer => rootReducer.userReducer);
+  const { products } = useSelector((rooteReducer) => rooteReducer.cartReducer);
   const dispatch = useDispatch();
 
 
@@ -37,7 +38,7 @@ const Header = ({ cartItems, openCart }) => {
           <button className="login-button" onClick={ handleLogin }>Login </button>
         ) }
 
-          <button className="cart" onClick={ () => openCart() }>{cartItems}</button>
+          <button className="cart" onClick={ () => openCart() }>{products.length}</button>
       </div>
       
     </div>

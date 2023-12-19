@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "Galaxy A04e 64GB Preto 4G Octa-Core 3GB RAM",
+        "color": "blue",
+        "category": "eletronicos",
+        "price": "599.9",
+        "description": "",
+        "brand": "Samsung",
+        "infos": []
+    },
+    {
+        "id": 2,
+        "name": "iPhone 15 Plus 128GB Azul 6,7`` 48MP iOS 5G",
+        "color": "white",
+        "category": "eletronicos",
+        "price": "7469.10",
+        "description": "",
+        "brand": "Apple",
+        "infos": []
+    },
+    {
+        "id": 3,
+        "name": "Galaxy A14 128GB Preto 5G Octa-Core 4GB RAM 6,6`` Câm. Tripla + Selfie 13MP",
+        "color": "black",
+        "category": "eletronicos",
+        "price": "989.10",
+        "description": "",
+        "brand": "Samsung",
+        "infos": []
+    },
+    {
+        "id": 4,
+        "name": "Moto G84 256GB Grafite 5G Snapdragon 695 8GB RAM 6,55``",
+        "color": "black",
+        "category": "eletronicos",
+        "price": "1599.00",
+        "description": "",
+        "brand": "Motorola",
+        "infos": []
+    }
+]
