@@ -14,7 +14,7 @@ const CartItem = ({ item }) => {
           
           <div className="buttons">
             <button className="btn">+</button>
-            <p>{ item.quantify }</p>
+            <p>{ item.quantity }</p>
             <button className="btn">-</button>
             <button className="close">x</button>
           </div>

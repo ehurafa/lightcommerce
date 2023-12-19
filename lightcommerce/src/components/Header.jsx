@@ -1,3 +1,5 @@
+import { useMemo } from "react";
+ 
 import { useSelector, useDispatch } from "react-redux";
 
 import "./Header.css";
@@ -9,6 +11,9 @@ const Header = ({ openCart }) => {
   const { products } = useSelector((rooteReducer) => rooteReducer.cartReducer);
   const dispatch = useDispatch();
 
+  const productsCount = useMemo(() => {
+    return products.reduce((acc, curr) => acc + curr.quantity, 0);
+  }, [products]);
 
   const handleLogin = () => {
     dispatch(loginUser({ name: "Rafa" }))
@@ -38,7 +43,7 @@ const Header = ({ openCart }) => {
           <button className="login-button" onClick={ handleLogin }>Login </button>
         ) }
 
-          <button className="cart" onClick={ () => openCart() }>{products.length}</button>
+          <button className="cart" onClick={ () => openCart() }>{ productsCount }</button>
       </div>
       
     </div>

@@ -14,7 +14,7 @@ const cartReducer = (state = initialState, action) => {
                 return {
                     ...state,
                     products: state.products.map((product) => product.id === action.payload.id
-                        ? { ...product, quantify: product.quantify + 1}
+                        ? { ...product, quantity: product.quantity + 1}
                         : product
                     )
                 }
@@ -22,7 +22,7 @@ const cartReducer = (state = initialState, action) => {
 
             return {
                 ...state,
-                products: [...state.products, { ...action.payload, quantify: 1 }]
+                products: [...state.products, { ...action.payload, quantity: 1 }]
             }
         default:
             return state;
