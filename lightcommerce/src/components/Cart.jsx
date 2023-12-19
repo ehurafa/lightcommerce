@@ -16,7 +16,6 @@ const Cart = ({ closeCart }) => {
         { products && products.map((product) => (
           <div key={ product.id }>
             <CartItem item={ product } />
-            <hr />
           </div>
         ))}
       </div>

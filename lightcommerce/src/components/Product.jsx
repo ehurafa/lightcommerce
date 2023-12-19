@@ -17,7 +17,7 @@ const Product = ({ product, photo }) => {
         <img src={ photo  } />
         <p>{ product.name }</p>
         <p>{ `R$ ${product.price},00` }</p>
-        <button onClick={ () => handleAddProduct() }>Comprar</button>
+        <button className="btn" onClick={ () => handleAddProduct() }>Comprar</button>
     </div>
   )
 }
