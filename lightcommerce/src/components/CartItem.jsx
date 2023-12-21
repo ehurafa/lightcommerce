@@ -1,13 +1,21 @@
 import { useDispatch } from "react-redux";
 
 import "./CartItem.css";
-import { removeProductFromCart } from "../redux/cart/actions";
+import { removeProductFromCart, moreProductFromCart, minusProductFromCart } from "../redux/cart/actions";
 
 const CartItem = ({ item }) => {
   const dispatch = useDispatch();
 
   const handleRemove = () => {  
     dispatch(removeProductFromCart(item.id))
+  }
+
+  const handleMore = () => {  
+    dispatch(moreProductFromCart(item.id))
+  }
+
+  const handleMinus = () => {  
+    dispatch(minusProductFromCart(item.id))
   }
 
 
@@ -23,9 +31,9 @@ const CartItem = ({ item }) => {
         <div className="column">
           
           <div className="buttons">
-            <button className="btn">+</button>
+            <button className="btn" onClick={ () => handleMore() }>+</button>
             <p>{ item.quantity }</p>
-            <button className="btn">-</button>
+            <button className="btn" onClick={ () => handleMinus() }>-</button>
             <button className="close" onClick={ () => handleRemove()}>x</button>
           </div>
         </div>        
