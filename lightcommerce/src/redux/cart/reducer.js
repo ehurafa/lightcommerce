@@ -38,41 +38,23 @@ const cartReducer = (state = initialState, action) => {
             }
         
         case CartActionTypes.MORE_PRODUCT:
-            if (productIsAlreadyInCart(state.products, action.payload)) {
-                return {
-                    ...state,
-                    products: state.products.map((product) => product.id === action.payload
-                        ? { ...product, quantity: product.quantity + 1}
-                        : product
-                    )
-                }
-            }
-
             return {
                 ...state,
-                products: [...state.products, { ...action.payload, quantity: 20 }]
+                products: state.products.map((product) => product.id === action.payload 
+                    ? {...product, quantity: product.quantity + 1}
+                    : product
+                    ),
             }
         
         case CartActionTypes.MINUS_PRODUCT:
 
-            const quantify = state.products.map((product) => product.quantify > 1)
-
-            if (productIsAlreadyInCart(state.products, action.payload)) {
-                if (quantify) {
-                    return {
-                        ...state,
-                        products: state.products.map((product) => product.id === action.payload
-                            ? { ...product, quantity: product.quantity - 1}
-                            : product
-                        )
-                    }
-                }
-                
-            }
-            return {
-                ...state,
-                products: [...state.products]
-            }
+        return {
+            ...state,
+            products: state.products.map((product) => product.id === action.payload 
+                ? {...product, quantity: product.quantity - 1}
+                : product
+                ).filter(product => product.quantity > 0),
+        }
 
         default:
             return state;
