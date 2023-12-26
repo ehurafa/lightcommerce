@@ -4,16 +4,18 @@ import { useSelector, useDispatch } from "react-redux";
 
 import "./Header.css";
 import { loginUser, logoutUser } from "../redux/user/actions";
+import { selectProductsCount } from "../redux/cart/cart.selectors";
 
 const Header = ({ openCart }) => {
 
   const { currentUser } = useSelector(rootReducer => rootReducer.userReducer);
   const { products } = useSelector((rooteReducer) => rooteReducer.cartReducer);
+
+  const productsCount = useSelector(selectProductsCount);
+
+
   const dispatch = useDispatch();
 
-  const productsCount = useMemo(() => {
-    return products.reduce((acc, curr) => acc + curr.quantity, 0);
-  }, [products]);
 
   const handleLogin = () => {
     dispatch(loginUser({ name: "Rafa" }))

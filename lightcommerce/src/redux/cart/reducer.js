@@ -1,8 +1,7 @@
 import CartActionTypes from "./action-types";
 
 const initialState = {
-    products: [],
-    productsTotalPrice: 0
+    products: []
 }
 
 const productIsAlreadyInCart = (products, newId)  => {
