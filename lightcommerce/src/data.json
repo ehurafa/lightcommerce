@@ -38,5 +38,38 @@
         "description": "",
         "brand": "Motorola",
         "infos": []
+    },
+    {
+        "id": 5,
+        "name": "Carrinho De Passeio Ou Pedal Triciclo Baby City Menina - Maral - Rosa",
+        "color": "pink",
+        "category": "bebes",
+        "price": "574.90",
+        "description": "Aventuras, passeio e pedal, ficam mais divertidos com o Carrinho Triciclo da Maral. Um carrinho seguro e divertido para passeios ou pedais. Com aro protetor, apoio de pés e empurrador, a segurança e a alegria estão garantidas. Tirando os acessórios a criança pode pedalar livremente. Além disso, os pequenos podem levar sua garrafinha de água no compartimento atrás do carrinho.",
+        "brand": "Maral",
+        "photo": "https://imgs.extra.com.br/14306733/1xg.jpg",
+        "infos": []
+    },
+    {
+        "id": 6,
+        "name": "Carrinho de Passeio e Pedal - Locomotiva - Calesita",
+        "color": "red",
+        "category": "bebes",
+        "price": "687.65",
+        "description": "CARRINHO DE PASSEIO/PEDAL INFANTIL C/ EMPURRADOR DIIPI CALESITA. Está na área o mais um carrinho, dois em um super divertido. Com um desing off road para os pequenos aventureiros. Para as aventuras de passeio com papai ou mamãe, ele vem com acessórios como o apoio de pés, aro protetor e haste com suporte de bolsa. Tem também um painel com pelas em relevo, cores e formas que despertam a curiosidade dos pequenos e som que estimula a compreensão de causa e efeito.",
+        "brand": "Calesita",
+        "photo": "https://imgs.extra.com.br/1558526368/1xg.jpg",
+        "infos": []
+    },
+    {
+        "id": 7,
+        "name": "Carrinho De Passeio/Pedal Infantil C/ Empurrador - Diipi - Calesita - Verde",
+        "color": "green",
+        "category": "bebes",
+        "price": "644.00",
+        "description": "Carrinho de Passeio e Pedal - Locomotiva - Calesita: a Locomotiva da Calesita está partindo e o destino é a diversão das crianças. Essa linda Locomotiva - 2 em 1 - Passeio e Pedal é o carrinho ideal para as brincadeiras das crianças e passeios em família. Locomotiva - 2 em 1 - passeio e pedal: • Função pedal: Ao tirar os acessórios a Locomotiva vira uma lindo veículo a pedal • Função passeio: Mantendo os acessórios, os papais podem conduzir o passeio ao empurrar o carrinho Detalhes: • Direção e rodas guiadas pelo empurrador • Rodas com borracha para não derrapar • Mais facilidade para pedalar com tração por correia • Encaixe e desencaixe o empurrador com praticidade • Suporte para bolsa • Apoio de pé e aro protetor fáceis de remover • Câmbio para acionar a versão pedal • Com cinto três pontas • Ao acionar o “apito” toca o som • Chaminé/caldeira/limpa trilho/embolo/manômetro da pressão/apito Informações: • Produto: Carrinho Locomotiva 2 em 1 • Marca: Calesita Brinquedos • Coleção: Locomotiva • Tipo: Carrinho 2 em 1 - Passeio e Pedal • Categoria: Carrinho de Passeio e Pedal • Tamanho (C x A x L): - 66,5 x 100 x 58,7cm (sem haste) - 58,7 x 100 x 98,5cm (com haste) • Volume (Peso): 9,2 kg • Peso suportado: até 30 kg • Conteúdo: - 01 Locomotiva - 01 Empurrador com suporte para bolsa - 01 Par de proteção lateral - 01 Par de apoio de pés - 01 Manual de instruções • Idade recomendada: - A partir de 12 meses de idade: Passeio - A partir de 24 meses de idade: Pedal Especificações: • Referência: 1043 • Código de barras: 7898179824076 • Embalagem (C x A x L): 101 x 69 x 49 cm • Embalagem (Peso): 11.4kg • Material Composição: Plástico • Registro: CE-BRI/INNAC-02026-01A • Certificado: Órgãos Autorizados - OCP´S (Organismos de Certificação de Produtos) Habilidades desenvolvidas: • Curiosidade e descoberta • Compreensão de causa e efeito • Coordenação entre olhos e pés • Coordenação motora fina - mãos e dedos • Coordenação motora grossa - braços e pernas Aviso: • As imagens são meramente ilustrativas • Os pesos, tamanhos e medidas são aproximados • As cores e estampas dos produtos podem ter variações • As informações são de responsabilidade do fabricante ou fornecedor",
+        "brand": "Calesita",
+        "photo": "https://imgs.extra.com.br/1513625835/1xg.jpg",
+        "infos": []
     }
 ]
